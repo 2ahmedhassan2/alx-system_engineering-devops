@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 3 file_name | tail -n +3
+awk 'NR==5' lacta
