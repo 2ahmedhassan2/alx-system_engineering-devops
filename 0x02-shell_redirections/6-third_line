@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR==5' lacta
+awk 'NR==3' lacta
