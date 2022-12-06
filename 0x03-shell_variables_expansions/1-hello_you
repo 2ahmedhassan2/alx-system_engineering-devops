@@ -1,0 +1,2 @@
+#!/bin/bash
+VARNAME="hello user" | echo $VARNAME
