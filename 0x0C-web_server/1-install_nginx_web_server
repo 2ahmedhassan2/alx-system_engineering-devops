@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Installs Nginx and configures it to return 'Hello World!' on the root URL
-
-sudo apt-get update -y
-sudo apt-get install nginx -y
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
-sudo service nginx restart
+# A Bash script to install Nginx, listens for port 80, returns a webpage when querying nginx at root
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+service nginx start
